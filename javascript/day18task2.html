@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body style="text-align:center; background:#7eb7e8;">
+ <style>
+    li{
+        list-style-type: none;
+        text-align: center;
+    }
+ </style>
+<h2>Boat Crew</h2>
+<div id="crewDiv" style="border:2px solid black; width:200px; margin:auto; padding:10px;background-color:rgb(121, 192, 218)">
+  <ul id="crewList">
+    <li>Jack</li>
+    <li>Alice</li>
+    <li>John</li>
+    <li>Emma</li>
+  </ul>
+</div>
+<br>
+<button onclick="jackRoute()">Ask Jack</button>
+<button onclick="aliceRoute()">Ask Alice</button>
+<p id="route"></p>
+<script>
+function jackRoute() {
+  document.getElementById("route").innerText =
+  "Jack: Go straight and turn left.";
+}
+function aliceRoute() {
+  document.getElementById("route").innerText =
+  "Alice: Take right and go forward.";
+}
+</script>
+</body>
+</html>
